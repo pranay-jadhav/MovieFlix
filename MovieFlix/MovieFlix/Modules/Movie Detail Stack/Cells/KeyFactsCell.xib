@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="KeyFactsCell" id="SlB-Ta-EWr" customClass="KeyFactsCell" customModule="MovieFlix" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="349" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xHa-oY-nIn">
+                <rect key="frame" x="0.0" y="0.0" width="349" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybf-Fw-Rmr">
+                        <rect key="frame" x="0.0" y="0.0" width="349" height="76"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7le-gw-ZaB">
+                                <rect key="frame" x="15" y="15" width="319" height="17"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                <color key="textColor" red="0.078431372550000003" green="0.10980392160000001" blue="0.1450980392" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYx-Wa-r8P">
+                                <rect key="frame" x="15" y="42" width="319" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9529411793" green="0.95686274770000002" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="7le-gw-ZaB" firstAttribute="top" secondItem="Ybf-Fw-Rmr" secondAttribute="top" constant="15" id="Cg8-06-IIx"/>
+                            <constraint firstAttribute="bottom" secondItem="TYx-Wa-r8P" secondAttribute="bottom" constant="14.666666666666671" id="E6A-MR-cFo"/>
+                            <constraint firstItem="TYx-Wa-r8P" firstAttribute="trailing" secondItem="7le-gw-ZaB" secondAttribute="trailing" id="Qne-ow-ViV"/>
+                            <constraint firstAttribute="trailing" secondItem="7le-gw-ZaB" secondAttribute="trailing" constant="15" id="aWB-Zf-epF"/>
+                            <constraint firstItem="7le-gw-ZaB" firstAttribute="leading" secondItem="Ybf-Fw-Rmr" secondAttribute="leading" constant="15" id="r9H-J5-GfB"/>
+                            <constraint firstItem="TYx-Wa-r8P" firstAttribute="top" secondItem="7le-gw-ZaB" secondAttribute="bottom" constant="10" id="t0f-lW-cOR"/>
+                            <constraint firstItem="TYx-Wa-r8P" firstAttribute="leading" secondItem="7le-gw-ZaB" secondAttribute="leading" id="xqy-KV-PZS"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadiusV">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ybf-Fw-Rmr" secondAttribute="bottom" id="H7O-46-K2O"/>
+                    <constraint firstItem="Ybf-Fw-Rmr" firstAttribute="top" secondItem="xHa-oY-nIn" secondAttribute="top" id="Hc8-4L-1qL"/>
+                    <constraint firstItem="Ybf-Fw-Rmr" firstAttribute="leading" secondItem="xHa-oY-nIn" secondAttribute="leading" id="KtT-4R-wEu"/>
+                    <constraint firstAttribute="trailing" secondItem="Ybf-Fw-Rmr" secondAttribute="trailing" id="agZ-ep-7Q6"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="349" height="76"/>
+            <connections>
+                <outlet property="headerLabel" destination="7le-gw-ZaB" id="O24-HF-DBk"/>
+                <outlet property="valueLabel" destination="TYx-Wa-r8P" id="zUa-67-BDA"/>
+            </connections>
+            <point key="canvasLocation" x="167.17557251908397" y="0.0"/>
+        </collectionViewCell>
+    </objects>
+</document>
